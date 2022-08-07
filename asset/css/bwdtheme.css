@@ -1,0 +1,149 @@
+@font-face {
+  font-family: "ModernSans-Light";
+  src: url("../font/ModernSans-Light.otf");
+}
+
+body {
+  font-family: "ModernSans-Light";
+  background: #b70000;
+  height: 100%;
+
+  scrollbar-width: none;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+.color {
+  background: #347ab6ff;
+  color: white;
+}
+/* top_nav {
+  background: #347ab6ff;
+  position: absolute;
+  top: 0;
+  z-index: 1;
+  height: 9vw;
+  width: 100%;
+} */
+.isi {
+  height: 100vh;
+  width: 100%;
+}
+.isi1 {
+  overflow-y: hidden;
+}
+
+.isi2 {
+  background-color: #e91e63;
+}
+
+.isi3 {
+  background-color: #01579b;
+}
+.isi4 {
+  background-color: #4ffd0a;
+}
+.isi5 {
+}
+.isi6 {
+  background-color: #424e57;
+}
+swiper {
+  position: fixed;
+  top: 50%;
+  right: 1%;
+  transform: translate(-50, -50);
+  align-content: center;
+}
+.pining {
+  position: relative;
+  left: 50%;
+  transform: translate(-50%);
+  border: 1px solid rgb(255, 255, 255);
+  border-radius: 50%;
+  width: 0.7vw;
+  height: 0.7vw;
+  margin-bottom: 0.5vw;
+  opacity: 0.5;
+  transition: height 0.3s;
+}
+.pining_active {
+  border-radius: 30%;
+  height: 1.5vw;
+}
+.onpin {
+  opacity: 1;
+  background: white;
+}
+.bwd_footing {
+  height: 30vh;
+  background: #347ab6ff;
+}
+search {
+  width: 30%;
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+menu_bar {
+  background-color: #424e57;
+  width: 100%;
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.bg_img {
+  filter: blur(5px);
+  -webkit-filter: blur(5px);
+}
+.menu_nav {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+  display: flex;
+  border-radius: 30px;
+  color: white;
+  font-size: 1em;
+  text-align: center;
+  flex: row wrap;
+  justify-content: center;
+  overflow: hidden;
+}
+.background_menu {
+  position: absolute;
+  min-width: 100%;
+  height: 100%;
+  left: 0;
+  right: 0;
+  opacity: 0.5;
+  background: #424e57;
+  z-index: 5;
+}
+.menu_nav > div {
+  padding: 0.5em;
+  width: 80px;
+  text-align: center;
+  font-size: 1em;
+  z-index: 6;
+}
+@media screen and (max-width: 507px) {
+  .grid {
+    width: 100%;
+  }
+  search {
+    width: 80%;
+  }
+}
+/* 
+
+@media screen and (max-width: 1279px) {
+  bwd_head {
+    display: none;
+  }
+  top_nav {
+    display: none;
+  }
+} */
